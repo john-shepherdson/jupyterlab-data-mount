@@ -4,12 +4,30 @@
 [![PyPI](https://img.shields.io/pypi/v/jupyterlab-data-mount)](https://pypi.org/project/jupyterlab-data-mount/)
 [![npm](https://img.shields.io/npm/v/jupyterlab-data-mount)](https://www.npmjs.com/package/jupyterlab-data-mount)
 
-A JupyterLab extension to mount external data storage locations.
+A JupyterLab extension that enables users to securely mount external data storage locations directly into their running JupyterLab environment.
 
-This extension is composed of a Python package named `jupyterlab_data_mount`
-for the server extension and a NPM package named `jupyterlab-data-mount`
-for the frontend extension.
+It is designed for JupyterHub deployments that want to provide users with seamless access to external storage systems such as B2DROP, S3-compatible object storage, AWS S3, or other rclone-supported services — without requiring users to manually configure mounts inside their notebooks.
 
+The extension provides:
+
+- A JupyterLab frontend for configuring and managing data mounts
+- A server extension that handles secure communication and mount orchestration
+- Support for reusable storage templates for common providers
+- Integration with JupyterHub deployments for centrally managed and pre-configured mounts
+- Secure handling of credentials without requiring elevated privileges inside user environments
+
+This allows users to access external datasets as if they were local files inside JupyterLab, improving reproducibility, reducing manual setup, and simplifying workflows across distributed research infrastructures.
+
+This extension is composed of:
+
+- A Python package named `jupyterlab_data_mount` for the server extension
+- A NPM package named `jupyterlab-data-mount` for the frontend extension
+
+For detailed deployment options, configuration examples, and JupyterHub integration, see the full documentation:
+
+https://jsc-jupyter.github.io/jupyterlab-data-mount/  
+
+  
 ![JupyterLab](https://jsc-jupyter.github.io/jupyterlab-data-mount/images/jupyterlab.png)
 
 ## Requirements
@@ -18,19 +36,9 @@ for the frontend extension.
 
 ## Install
 
-To install the extension, execute:
+This extension must be configured in a JupyterHub Deployment. Please check documentation:  
 
-```bash
-pip install jupyterlab_data_mount
-```
-
-## Uninstall
-
-To remove the extension, execute:
-
-```bash
-pip uninstall jupyterlab_data_mount
-```
+https://jsc-jupyter.github.io/jupyterlab-data-mount/spawner/installation/
 
 ## Troubleshoot
 
