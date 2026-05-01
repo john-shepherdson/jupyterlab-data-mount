@@ -25,9 +25,8 @@ This extension is composed of:
 
 For detailed deployment options, configuration examples, and JupyterHub integration, see the full documentation:
 
-https://jsc-jupyter.github.io/jupyterlab-data-mount/  
+https://jsc-jupyter.github.io/jupyterlab-data-mount/
 
-  
 ![JupyterLab](https://jsc-jupyter.github.io/jupyterlab-data-mount/images/jupyterlab.png)
 
 ## Requirements
@@ -36,7 +35,7 @@ https://jsc-jupyter.github.io/jupyterlab-data-mount/
 
 ## Install
 
-This extension must be configured in a JupyterHub Deployment. Please check documentation:  
+This extension must be configured in a JupyterHub Deployment. Please check documentation:
 
 https://jsc-jupyter.github.io/jupyterlab-data-mount/spawner/installation/
 
